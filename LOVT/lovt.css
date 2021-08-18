@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    color: #555555;
+    margin: 0;
+    padding: 0;
+    /* margin - espaçamento externo */
+    /* padding - espaçamento interno */
+}
+
+/* estilo dark-theme */
+.dark-theme {
+    background-color: #333;
+    color: #FFF;
+}
+.dark-theme h1,
+.dark-theme h2 {
+    color: #FFF
+}
+.dark-theme .destaques article {
+    color: #e7e7e7;
+    background-color: #6b6b6b;
+}
+.dark-theme .contact input,
+.dark-theme .contact textarea {
+    background-color: #6b6b6b;
+}
+.dark-theme footer {
+    background-color: #272727;
+}
+
+
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* margin: 10px - todos os lados */
+    /* margin: 10 px 20 px - top/bottom, left/right */
+    /* margin: 10px 20px 30px - top, left/right, bottom/bottom */
+    /* auto só funciona para laterais no margin */
+
+    /*border - espessura, textura e cor */
+}
+
+header {
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.25)
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between
+}
+
+header h1 {
+    color: #777777;
+    display: inline-block;
+    font-size: 40px;
+}
+
+header h2 {
+    color: #AAAAAA;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header button.menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #AAAAAA;
+}
+
+/* --banner-- */
+
+section.banner {
+    margin: 50px 0;
+}
+
+section.banner img.slider {
+    width: 100%;
+}
+
+section.banner .carousel {
+    position: relative;
+}
+
+section.banner .carousel .controls {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,
+.right {
+    background: rgba(141, 141, 141, 0.62);
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 15px 20px 13px;
+
+    cursor: pointer;
+}
+
+/* --destaque-- */
+
+section.destaques .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.destaques article {
+    background-color: #EEEEEE;
+    width: 520px;
+}
+
+section.destaques article .thumb {
+    width: 100%;
+    height: 300px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.destaques article .info {
+    padding: 25px 25px 10px;
+    text-align: justify;
+
+}
+
+section.destaques article .info .tag {
+    color: #fff;
+    font-size: 35px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+section.destaques article .info .tag.tag-new {
+    background-color: #51D275;
+}
+
+section.destaques article .info .tag.tag-sale {
+    background-color: #DC9730;
+}
+
+section.destaques article .info .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.destaques article .info .details .price {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 00;
+}
+
+/* --Style-- */
+
+section.styles {
+    margin: 70px 0;
+}
+
+section.styles h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    color: #888888
+}
+
+section.styles article {
+    text-align: center;
+    padding: 70px;
+    margin: 20px auto;
+
+    background-color: #33b1fa;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+section.styles article h3 {
+    background: rgba(196, 196, 196, 0.5);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --contact-- */
+
+section.contact {
+    padding: 30px;
+}
+
+section.contact h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #888888;
+    font-weight: 300;
+}
+
+section.contact form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+section.contact form input,
+section.contact form textarea {
+    width: 100%;
+    padding: 7px;
+    margin: 10px 0;
+    resize: none;
+}
+
+section.contact form button {
+    padding: 10px 20px;
+    background-color: #DC9730;
+    color: #fff;
+    border: none;
+}
+
+/* --footer-- */
+
+footer {
+    color: white;
+    background-color: #333333;
+    padding: 80px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .container .map iframe {
+    width: 500px;
+    max-width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+footer .container .info {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer .info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .info h4,
+footer .info p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer .social h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer .social ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 25px 0 0;
+
+    cursor: pointer;
+}
+
+footer ul li img {
+    height: 30px;
+}
+
+@media (max-width: 979px) {
+
+    section.destaques article {
+        width: 350px;
+    }
+}
